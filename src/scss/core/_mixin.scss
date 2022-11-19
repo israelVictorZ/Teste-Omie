@@ -1,0 +1,17 @@
+@mixin flex($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin absoluteTopLeft($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin absoluteBottomRight($bottom, $right) {
+    position: absolute;
+    bottom: $bottom;
+    right: $right;
+}

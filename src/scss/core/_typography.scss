@@ -1,0 +1,39 @@
+.title {
+    font-family: $fontFamily1;
+    font-size: $titleFontSize;
+    line-height: $titleLineHeight;
+    margin-bottom: 8px;
+
+    &.title {
+        &-dark {
+            color: $primary;
+        }
+
+        &-light {
+            color: $white;
+        }
+    }
+}
+
+.text {
+    font-family: $fontFamily2;
+    font-size: $textFontSize;
+    line-height: $textLineHeight;
+
+    &.text {
+        &-dark {
+            color: $typographyColor;
+        }
+
+        &-light {
+            color: $lightColor1;
+        }
+    }
+}
+
+.title,
+.text {
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.02em;
+}
