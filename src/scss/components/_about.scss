@@ -1,11 +1,16 @@
 .about-area {
-    padding: 40px 24px;
+    padding: 40px 0 80px;
+
+    .title, .text {
+        padding: 0 24px;
+    }
 
     .about-img {
         width: 100%;
         height: auto;
         margin-top: 20px;
         margin-bottom: 40px;
+        padding: 0 24px;
 
         img {
             width: 100%;
@@ -14,7 +19,7 @@
         }
     }
 
-    .vantages-item {
+    .features-item {
         padding: 20px;
         background-color: $lightColor1;
         border: 1px solid $lightColor2;

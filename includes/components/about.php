@@ -16,10 +16,10 @@
             </div>
 
             <div class="col-12">
-                <div class="owl-carousel owl-vantages">
+                <div class="owl-carousel owl-features">
 
                     <!-- Item 1 -->
-                    <div class="vantages-item">
+                    <div class="features-item">
                         <div class="title-card-area">
                             <div class="card-icon">
                                 <img src="public/icons/dashboard.svg" alt="">
@@ -32,7 +32,7 @@
                     </div>
 
                     <!-- Item 2 -->
-                    <div class="vantages-item">
+                    <div class="features-item">
                         <div class="title-card-area">
                             <div class="card-icon">
                                 <img src="public/icons/dollar-sign.svg" alt="">
@@ -45,7 +45,7 @@
                     </div>
 
                     <!-- Item 3 -->
-                    <div class="vantages-item">
+                    <div class="features-item">
                         <div class="title-card-area">
                             <div class="card-icon">
                                 <img src="public/icons/shopping-cart.svg" alt="">
@@ -58,7 +58,7 @@
                     </div>
 
                     <!-- Item 4 -->
-                    <div class="vantages-item">
+                    <div class="features-item">
                         <div class="title-card-area">
                             <div class="card-icon">
                                 <img src="public/icons/receipt.svg" alt="">

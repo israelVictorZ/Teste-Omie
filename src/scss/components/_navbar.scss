@@ -19,6 +19,8 @@ nav {
             &-button {
                 margin-left: 40px;
                 font-size: 12px;
+                display: unset;
+                width: fit-content;
             }
 
             &-toggler {
@@ -88,7 +90,7 @@ nav {
                 padding-top: 100px;
                 transform: scaleY(0);
                 transform-origin: top;
-                transition: .3s;
+                transition: 0.3s;
 
                 a {
                     padding: 12px 24px;

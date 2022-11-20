@@ -1,0 +1,15 @@
+.partners-area {
+    padding: 24px;
+    background-color: $lightColor1;
+
+    .partners-icon {
+        width: 100%;
+        height: auto;
+        @include flex(center, center);
+        margin-bottom: 32px;
+
+        img {
+            width: 110px;
+        }
+    }
+}

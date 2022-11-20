@@ -1,0 +1,53 @@
+.questions {
+    &-area {
+        padding: 40px 0;
+
+        .title {
+            padding: 0 24px;
+            margin-bottom: 0;
+        }
+
+        .accordion {
+            margin-bottom: 32px;
+
+            &-item {
+                padding: 24px;
+                border: 0;
+                border-bottom: 1px solid rgba($primary, .2);
+
+                button {
+                    padding: 0;
+                    margin-bottom: 8px;
+
+                    &::after {
+                        width: 24px;
+                        height: 24px;
+                        background-image: url("../../public/icons/arrow.svg");
+                        background-size: contain;
+                        @include flex(center, center)
+                    }
+
+                    &:not(.collapsed), &:focus {
+                        outline: none;
+                        border: none;
+                        box-shadow: none;
+                        background-color: $white;
+                    }
+
+                    .text {
+                        color: $primary;
+                    }
+                }
+            }
+
+            &-body {
+                padding: 0;
+
+                .text {
+                    color: $darkColor;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

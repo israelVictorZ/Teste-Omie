@@ -1,0 +1,97 @@
+.resources-area {
+    padding: 40px 24px;
+
+    .resources {
+        &-tabs-buttons {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            text-align: center;
+            margin-top: 20px;
+
+            .tab-button {
+                width: 50%;
+                padding: 6px;
+                @extend .text;
+                color: $primary;
+
+                &.active {
+                    font-weight: 700;
+                }
+            }
+
+            &::before {
+                content: "";
+                @include absoluteBottomLeft(0, 0);
+                width: 100%;
+                height: 2px;
+                background-color: $lightColor2;
+            }
+
+            .marker {
+                @include absoluteBottomLeft(0, 0);
+                width: 50%;
+                height: 2px;
+                background-color: $secondary;
+                transition: 0.3s;
+            }
+
+            &.left-marker {
+                .marker {
+                    left: 0;
+                }
+            }
+
+            &.right-marker {
+                .marker {
+                    left: 50%;
+                }
+            }
+        }
+
+        &-tabs-contents {
+            position: relative;
+            margin-top: 80px;
+
+            .tab-content {
+                @include absoluteTopLeft(0, 0);
+                transform: translateX(-20px);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+
+                &.active {
+                    position: relative;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateX(0);
+                }
+
+                .tab-image {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 40px;
+                    @include flex(center, center);
+
+                    img {
+                        width: 90%;
+                        object-fit: contain;
+                    }
+                }
+
+                .tab-description {
+                    margin-bottom: 60px;
+
+                    .title {
+                        font-family: $fontFamily2;
+                    }
+
+                    .text {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

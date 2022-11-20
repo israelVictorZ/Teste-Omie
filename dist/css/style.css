@@ -11,27 +11,29 @@
   line-height: 32px;
   margin-bottom: 8px;
 }
-.title.title-dark {
+.title-dark {
   color: #001E27;
 }
-.title.title-light {
+.title-light {
   color: #FFF;
 }
 
-.text {
+.text, .resources-area .resources-tabs-buttons .tab-button {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  text-decoration: none;
 }
-.text.text-dark {
+.text-dark {
   color: #4F5C5C;
 }
-.text.text-light {
+.text-light {
   color: #F7F7F7;
 }
 
 .title,
-.text {
+.text,
+.resources-area .resources-tabs-buttons .tab-button {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02em;
@@ -58,6 +60,8 @@ nav.navbar .navbar-brand img {
 nav.navbar .navbar-button {
   margin-left: 40px;
   font-size: 12px;
+  display: unset;
+  width: fit-content;
 }
 nav.navbar .navbar-toggler {
   width: 22px;
@@ -159,43 +163,47 @@ nav.navbar .navbar-collapse.show {
 }
 
 .about-area {
-  padding: 40px 24px;
+  padding: 40px 0 80px;
+}
+.about-area .title, .about-area .text, .about-area .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .about-area .tab-button {
+  padding: 0 24px;
 }
 .about-area .about-img {
   width: 100%;
   height: auto;
   margin-top: 20px;
   margin-bottom: 40px;
+  padding: 0 24px;
 }
 .about-area .about-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.about-area .vantages-item {
+.about-area .features-item {
   padding: 20px;
   background-color: #F7F7F7;
   border: 1px solid #DBDFDE;
   border-radius: 8px;
 }
-.about-area .vantages-item .title-card-area {
+.about-area .features-item .title-card-area {
   display: flex;
   align-items: center;
   justify-content: unset;
   margin-bottom: 12px;
 }
-.about-area .vantages-item .title-card-area .card-icon {
+.about-area .features-item .title-card-area .card-icon {
   width: 32px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.about-area .vantages-item .title-card-area .card-icon img {
+.about-area .features-item .title-card-area .card-icon img {
   height: 100%;
   object-fit: contain;
 }
-.about-area .vantages-item .title-card-area .title-card {
+.about-area .features-item .title-card-area .title-card {
   margin-bottom: 0;
   font-size: 16px;
   color: #001E27;
@@ -203,12 +211,12 @@ nav.navbar .navbar-collapse.show {
   font-weight: 700;
   line-height: 24px;
 }
-.about-area .vantages-item .text {
+.about-area .features-item .text, .about-area .features-item .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .about-area .features-item .tab-button {
   margin-bottom: 0;
 }
 
 .video-area {
-  padding: 70px 24px;
+  padding: 40px 24px;
 }
 .video-area .video-card {
   background-color: #F7F7F7;
@@ -226,7 +234,7 @@ nav.navbar .navbar-collapse.show {
 .video-area .video-description {
   padding: 16px;
 }
-.video-area .video-description .text {
+.video-area .video-description .text, .video-area .video-description .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .video-area .video-description .tab-button {
   color: #001E27;
 }
 .video-area .video-description small {
@@ -254,15 +262,491 @@ nav.navbar .navbar-collapse.show {
   background-color: #4F5C5C;
 }
 
+.resources-area {
+  padding: 40px 24px;
+}
+.resources-area .resources-tabs-buttons {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+.resources-area .resources-tabs-buttons .tab-button {
+  width: 50%;
+  padding: 6px;
+  color: #001E27;
+}
+.resources-area .resources-tabs-buttons .tab-button.active {
+  font-weight: 700;
+}
+.resources-area .resources-tabs-buttons::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #DBDFDE;
+}
+.resources-area .resources-tabs-buttons .marker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #00E2F4;
+  transition: 0.3s;
+}
+.resources-area .resources-tabs-buttons.left-marker .marker {
+  left: 0;
+}
+.resources-area .resources-tabs-buttons.right-marker .marker {
+  left: 50%;
+}
+.resources-area .resources-tabs-contents {
+  position: relative;
+  margin-top: 80px;
+}
+.resources-area .resources-tabs-contents .tab-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.resources-area .resources-tabs-contents .tab-content.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.resources-area .resources-tabs-contents .tab-content .tab-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resources-area .resources-tabs-contents .tab-content .tab-image img {
+  width: 90%;
+  object-fit: contain;
+}
+.resources-area .resources-tabs-contents .tab-content .tab-description {
+  margin-bottom: 60px;
+}
+.resources-area .resources-tabs-contents .tab-content .tab-description .title {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.resources-area .resources-tabs-contents .tab-content .tab-description .text, .resources-area .resources-tabs-contents .tab-content .tab-description .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .resources-tabs-contents .tab-content .tab-description .tab-button {
+  margin-bottom: 20px;
+}
+
+.vantages-area {
+  padding: 40px 0 40px;
+}
+.vantages-area .title {
+  padding: 0 24px;
+}
+.vantages-area .owl-item:nth-child(odd) .vantages-item {
+  background-color: #F7F7F7;
+}
+.vantages-area .owl-item:nth-child(even) .vantages-item {
+  background-color: #ECEEEE;
+}
+.vantages-area .owl-item .vantages-item {
+  padding: 24px;
+  border-radius: 8px;
+}
+.vantages-area .owl-item .vantages-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vantages-area .owl-item .vantages-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.vantages-area .owl-item .vantages-description .title {
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.vantages-area .button-box {
+  padding: 80px 24px 0;
+}
+
+.benefits-area {
+  padding: 80px 0;
+}
+.benefits-area .title,
+.benefits-area .text,
+.benefits-area .resources-area .resources-tabs-buttons .tab-button,
+.resources-area .resources-tabs-buttons .benefits-area .tab-button {
+  padding: 0 24px;
+}
+.benefits-area .text, .benefits-area .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .benefits-area .tab-button {
+  margin-bottom: 24px;
+}
+.benefits-area .owl-benefits {
+  margin-top: 80px;
+}
+.benefits-area .owl-benefits .owl-dots {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: fit-content;
+}
+.benefits-area .owl-benefits .owl-dots .owl-dot {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+.benefits-area .owl-benefits .owl-dots .owl-dot span {
+  position: relative;
+  padding: 6px 8px;
+  border-bottom: 2px solid #DBDFDE;
+  font-size: 16px;
+  color: #001E27;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.benefits-area .owl-benefits .owl-dots .owl-dot span::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  background-color: #00E2F4;
+  width: 100%;
+  height: 2px;
+  transition: 0.3s;
+}
+.benefits-area .owl-benefits .owl-dots .owl-dot::before, .benefits-area .owl-benefits .owl-dots .owl-dot::after {
+  content: unset;
+}
+.benefits-area .owl-benefits .owl-dots .owl-dot.active {
+  background-color: transparent;
+}
+.benefits-area .owl-benefits .owl-dots .owl-dot.active span {
+  font-weight: 700;
+}
+.benefits-area .owl-benefits .owl-dots .owl-dot.active span::after {
+  transform: translateX(-50%) scaleX(1);
+}
+.benefits-area .button-link {
+  margin-top: 40px;
+  display: block;
+}
+.benefits-card {
+  padding: 40px 24px;
+  background-color: #F7F7F7;
+}
+.benefits-card-icon {
+  height: 56px;
+  width: fit-content;
+  margin-bottom: 2px;
+}
+.benefits-card-icon img {
+  height: 100%;
+  object-fit: contain;
+}
+.benefits-card-description .title,
+.benefits-card-description .text,
+.benefits-card-description .resources-area .resources-tabs-buttons .tab-button,
+.resources-area .resources-tabs-buttons .benefits-card-description .tab-button {
+  padding: 0;
+  margin-bottom: 0;
+}
+.benefits-card-description .title {
+  margin-bottom: 8px;
+}
+.benefits-card-description .price {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.futures-area {
+  padding: 40px 24px;
+}
+.futures-area .text, .futures-area .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .futures-area .tab-button {
+  margin-bottom: 24px;
+}
+.futures-card {
+  padding: 24px;
+  display: block;
+  box-shadow: 0px 4px 8px rgba(0, 30, 39, 0.02), 0px 8px 24px rgba(0, 30, 39, 0.08);
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+.futures-card:last-child {
+  margin-bottom: 0;
+}
+.futures-card-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.futures-card-icons img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.blog-area {
+  padding: 40px 0;
+}
+.blog-area .title {
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+.blog-card {
+  border-radius: 16px;
+  border: 1px solid #C2D4D6;
+  overflow: hidden;
+  height: 100%;
+}
+.blog-card-img {
+  width: 100%;
+  height: 200px;
+}
+.blog-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-card-description {
+  padding: 24px;
+}
+.blog-card-description .title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding: 0;
+}
+.blog-card-description .text, .blog-card-description .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .blog-card-description .tab-button {
+  margin-bottom: 48px;
+}
+.blog-card-description .button-link {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-card-description .button-link img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.questions-area {
+  padding: 40px 0;
+}
+.questions-area .title {
+  padding: 0 24px;
+  margin-bottom: 0;
+}
+.questions-area .accordion {
+  margin-bottom: 32px;
+}
+.questions-area .accordion-item {
+  padding: 24px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 30, 39, 0.2);
+}
+.questions-area .accordion-item button {
+  padding: 0;
+  margin-bottom: 8px;
+}
+.questions-area .accordion-item button::after {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../public/icons/arrow.svg");
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.questions-area .accordion-item button:not(.collapsed), .questions-area .accordion-item button:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #FFF;
+}
+.questions-area .accordion-item button .text, .questions-area .accordion-item button .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .questions-area .accordion-item button .tab-button {
+  color: #001E27;
+}
+.questions-area .accordion-body {
+  padding: 0;
+}
+.questions-area .accordion-body .text, .questions-area .accordion-body .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .questions-area .accordion-body .tab-button {
+  color: #4F5C5C;
+  margin-bottom: 0;
+}
+
+.partners-area {
+  padding: 24px;
+  background-color: #F7F7F7;
+}
+.partners-area .partners-icon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.partners-area .partners-icon img {
+  width: 110px;
+}
+
+.footer-links {
+  padding: 40px 24px;
+}
+.footer-list {
+  margin-bottom: 24px;
+}
+.footer-list .title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.footer-list ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer-list ul li .text, .footer-list ul li .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .footer-list ul li .tab-button {
+  color: #001E27;
+  margin-bottom: 16px;
+  display: block;
+}
+.footer-list ul li:last-child .text, .footer-list ul li:last-child .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .footer-list ul li:last-child .tab-button {
+  margin-bottom: 0;
+}
+.footer-list-accordion .title {
+  position: relative;
+  margin-bottom: 0;
+  transition: 0.3s;
+}
+.footer-list-accordion .title::after {
+  content: "";
+  background-image: url("../../public/icons/arrow.svg");
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.footer-list-accordion ul {
+  overflow: hidden;
+  max-height: 0;
+  transition: 1s;
+  transition-delay: -0.8s;
+}
+.footer-list-accordion.active .title {
+  margin-bottom: 16px;
+}
+.footer-list-accordion.active .title::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.footer-list-accordion.active ul {
+  max-height: 1000px;
+}
+.footer-outer-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer-outer-links ul .text, .footer-outer-links ul .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .footer-outer-links ul .tab-button {
+  color: #001E27;
+  margin-bottom: 24px;
+  font-weight: 700;
+  display: block;
+}
+.footer-copyright {
+  background-color: #001E27;
+  padding: 24px;
+}
+.footer-copyright-sn {
+  margin-bottom: 40px;
+}
+.footer-copyright-sn ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer-copyright-sn ul li {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-copyright-sn ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer-copyright-sn ul-icon {
+  text-decoration: none;
+}
+.footer-copyright-address span {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 a.button {
   font-family: "Poppins", sans-serif;
-  background-color: #00E2F4;
-  color: #001E27;
   padding: 8px 16px;
   border-radius: 1000px;
   text-decoration: none;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+a.button-dark {
+  background-color: #00E2F4;
+  color: #001E27;
+}
+a.button-light {
+  background-color: #FFF;
+  color: #001E27;
+}
+a.button-light-stroke {
+  border: 2px solid #FFF;
+  color: #FFF;
+}
+a.button-link {
+  padding: 0;
+  color: #001E27;
+  font-weight: 700;
+}
+a.button-link img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-left: 12px;
 }
 
 .owl-carousel .owl-dots {
@@ -315,8 +799,18 @@ a.button {
   height: 16px;
 }
 
-body {
-  height: 100000000px;
+.cta-area {
+  padding: 40px 24px;
+  background-color: #001E27;
+}
+.cta-area .text, .cta-area .resources-area .resources-tabs-buttons .tab-button, .resources-area .resources-tabs-buttons .cta-area .tab-button {
+  padding-bottom: 60px;
+}
+.cta-area a {
+  margin-bottom: 16px;
+}
+.cta-area a:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

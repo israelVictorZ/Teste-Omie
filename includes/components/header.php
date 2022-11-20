@@ -5,7 +5,7 @@
                 <img src="public/logo.svg" alt="">
             </a>
 
-            <a href="#" class="button navbar-button"> Experimente </a>
+            <a href="#" class="button button-dark navbar-button"> Experimente </a>
 
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger"></div>

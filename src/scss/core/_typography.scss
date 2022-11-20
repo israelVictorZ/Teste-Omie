@@ -4,14 +4,12 @@
     line-height: $titleLineHeight;
     margin-bottom: 8px;
 
-    &.title {
-        &-dark {
-            color: $primary;
-        }
+    &-dark {
+        color: $primary;
+    }
 
-        &-light {
-            color: $white;
-        }
+    &-light {
+        color: $white;
     }
 }
 
@@ -19,15 +17,14 @@
     font-family: $fontFamily2;
     font-size: $textFontSize;
     line-height: $textLineHeight;
+    text-decoration: none;
 
-    &.text {
-        &-dark {
-            color: $darkColor;
-        }
+    &-dark {
+        color: $darkColor;
+    }
 
-        &-light {
-            color: $lightColor1;
-        }
+    &-light {
+        color: $lightColor1;
     }
 }
 
