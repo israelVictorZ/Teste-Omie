@@ -1,13 +1,13 @@
 <section class="benefits-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <h2 class="title title-dark text-center">Personalize o sistema de acordo com as suas necessidades</h2>
 
                 <p class="text text-dark text-center">Na Omie.Store você encontra diversos aplicativos para complementar o seu Sistema Omie de acordo com o que sua empresa precisa.</p>
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="owl-carousel owl-benefits">
 
                     <div class="benefits-card" data-dot="<span>Serviços</span>">

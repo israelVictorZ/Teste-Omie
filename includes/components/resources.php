@@ -1,7 +1,7 @@
 <section class="resources-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
 
                 <h2 class="title title-dark">Encontre recursos para tudo o que precisa</h2>
 
@@ -9,7 +9,7 @@
 
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="resources-tabs-buttons">
                     <span data-id="tab-1" class="tab-button active">Micro e pequenas</span>
                     <span data-id="tab-2" class="tab-button">Médias e grandes</span>
@@ -21,13 +21,13 @@
                 <div class="resources-tabs-contents">
                     <div id="tab-1" class="tab-content active">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="tab-image">
                                     <img src="public/tabs/tab-1/notas-fiscais.svg" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="tab-description">
                                     <h3 class="title title-dark">Emissão de Notas Fiscais</h3>
 
@@ -39,13 +39,13 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="tab-image">
                                     <img src="public/tabs/tab-1/controle-estoque.svg" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="tab-description">
                                     <h3 class="title title-dark">Controle de estoque</h3>
 
@@ -57,13 +57,13 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="tab-image">
                                     <img src="public/tabs/tab-1/fluxo-caixa.svg" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="tab-description">
                                     <h3 class="title title-dark">Fluxo de caixa</h3>
 
@@ -75,13 +75,13 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="tab-image">
                                     <img src="public/tabs/tab-1/gestao-contratos.svg" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="tab-description">
                                     <h3 class="title title-dark">Emissão de Notas Fiscais</h3>
 
@@ -95,15 +95,15 @@
 
                     <div id="tab-2" class="tab-content">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="tab-image">
                                             <img src="public/tabs/tab-2/integracao-bancaria.svg" alt="">
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="tab-description">
                                             <h3 class="title title-dark">Integração bancária</h3>
 
@@ -115,13 +115,13 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="tab-image">
                                             <img src="public/tabs/tab-2/marketplaces.svg" alt="">
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="tab-description">
                                             <h3 class="title title-dark"> Integração com Marketplaces </h3>
 
@@ -133,13 +133,13 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="tab-image">
                                             <img src="public/tabs/tab-2/relatorios-customizados.svg" alt="">
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="tab-description">
                                             <h3 class="title title-dark"> Relatórios customizados </h3>
 
@@ -151,13 +151,13 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="tab-image">
                                             <img src="public/tabs/tab-2/ordem-producao.svg" alt="">
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-sm-12">
                                         <div class="tab-description">
                                             <h3 class="title title-dark"> Ordem de produção </h3>
 

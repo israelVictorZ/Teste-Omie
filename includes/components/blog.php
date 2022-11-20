@@ -1,11 +1,11 @@
 <section class="blog-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <h2 class="title title-dark">Fique por dentro das principais novidades do mundo empresarial</h2>
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="owl-carousel owl-blog">
                     <div class="blog-card">
                         <div class="blog-card-img">

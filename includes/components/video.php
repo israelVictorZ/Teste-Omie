@@ -1,7 +1,7 @@
 <section class="video-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="video-card">
                     <div class="video-thumb">
                         <img src="public/video-thumb.svg" alt="">

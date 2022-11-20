@@ -11,6 +11,11 @@
     &-light {
         color: $white;
     }
+
+    @media (min-width: 992px) {
+        font-size: $titleFontSize + 10px;
+        line-height: $titleLineHeight + 8px;
+    }
 }
 
 .text {
@@ -25,6 +30,11 @@
 
     &-light {
         color: $lightColor1;
+    }
+
+    @media (min-width: 992px) {
+        font-size: $textFontSize + 6px;
+        line-height: $textLineHeight + 8px;
     }
 }
 

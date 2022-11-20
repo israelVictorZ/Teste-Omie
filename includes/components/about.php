@@ -1,7 +1,7 @@
 <section class="about-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <h2 class="title title-dark"> Centralize suas tarefas em uma única ferramenta </h2>
 
                 <p class="text text-dark">Você elimina processos manuais e faz a gestão de diferentes atividades do seu negócio em um ambiente seguro, com funcionalidades integradas e fáceis de usar.</p>
@@ -9,13 +9,13 @@
         </div>
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="about-img">
                     <img src="public/about.svg" alt="">
                 </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="owl-carousel owl-features">
 
                     <!-- Item 1 -->

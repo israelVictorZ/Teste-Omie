@@ -1,14 +1,14 @@
 <section class="futures-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <h2 class="title title-dark">Potencialize seu negócio com produtos inovadores</h2>
 
                 <p class="text text-dark">Nossos recursos são pensados para você se aproximar ainda mais dos seus clientes e oferecer serviços além do convencional.</p>
             </div>
         </div>
 
-        <div class="col-12">
+        <div class="col-sm-12">
             <a href="#" class="futures-card">
                 <div class="futures-card-icons">
                     <img src="public/icons/cash-double.svg" alt="">

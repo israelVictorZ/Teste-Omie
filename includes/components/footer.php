@@ -29,7 +29,7 @@
 <footer>
     <div class="container-fluid">
         <div class="row footer-links">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="footer-list footer-list-accordion active">
                     <h3 class="title title-dark">Contadores</h3>
                     <ul>
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="footer-list footer-list-accordion">
                     <h3 class="title title-dark">Empresas</h3>
                     <ul>
@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="footer-list footer-list-accordion">
                     <h3 class="title title-dark">A Omie</h3>
                     <ul>
@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="footer-outer-links">
                     <ul>
                         <li><a href="#" class="text"> Ajuda </a></li>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="row footer-copyright">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="footer-copyright-sn">
                     <ul>
                         <li>
@@ -131,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-12">
                 <div class="footer-copyright-address">
                     <span class="text text-light">Av. Jurubatuba, 460 - São Paulo - SP</span>
                     <span class="text text-light">0800 942 7592</span>
