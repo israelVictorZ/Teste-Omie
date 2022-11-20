@@ -207,6 +207,53 @@ nav.navbar .navbar-collapse.show {
   margin-bottom: 0;
 }
 
+.video-area {
+  padding: 70px 24px;
+}
+.video-area .video-card {
+  background-color: #F7F7F7;
+  border-radius: 8px 8px 16px 16px;
+}
+.video-area .video-thumb {
+  width: 100%;
+  height: auto;
+}
+.video-area .video-thumb img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.video-area .video-description {
+  padding: 16px;
+}
+.video-area .video-description .text {
+  color: #001E27;
+}
+.video-area .video-description small {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #4F5C5C;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+  font-size: 12px;
+}
+.video-area .video-description small span {
+  position: relative;
+  font-weight: 700;
+  margin-right: 4px;
+}
+.video-area .video-description small span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -4px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #4F5C5C;
+}
+
 a.button {
   font-family: "Poppins", sans-serif;
   background-color: #00E2F4;
@@ -216,6 +263,60 @@ a.button {
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
+}
+
+.owl-carousel .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.owl-carousel .owl-dots .owl-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: #DBDFDE;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.owl-carousel .owl-dots .owl-dot::before, .owl-carousel .owl-dots .owl-dot::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  transition: 0.3s;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+.owl-carousel .owl-dots .owl-dot::before {
+  background-image: url("../../public/effects/effect-carousel-dot-1.svg");
+  height: 20px;
+}
+.owl-carousel .owl-dots .owl-dot::after {
+  background-image: url("../../public/effects/effect-carousel-dot-2.svg");
+  height: 0;
+  transition-delay: 0.3s;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+  background-color: #001E27;
+}
+.owl-carousel .owl-dots .owl-dot.active::before, .owl-carousel .owl-dots .owl-dot.active::after {
+  opacity: 1;
+}
+.owl-carousel .owl-dots .owl-dot.active::after {
+  height: 16px;
+}
+
+body {
+  height: 100000000px;
 }
 
 /*# sourceMappingURL=style.css.map */

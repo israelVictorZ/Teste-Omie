@@ -10,6 +10,18 @@
     left: $left;
 }
 
+@mixin absoluteTopRight($top, $right) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+
+@mixin absoluteBottomLeft($bottom, $left) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+}
+
 @mixin absoluteBottomRight($bottom, $right) {
     position: absolute;
     bottom: $bottom;

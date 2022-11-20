@@ -45,7 +45,7 @@ nav {
                     &::before,
                     &::after {
                         content: "";
-                        background-color: $typographyColor;
+                        background-color: $darkColor;
                         @extend .hamburger;
                         @include absoluteTopLeft(0, 0);
                     }
