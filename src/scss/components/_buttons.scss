@@ -36,4 +36,39 @@ a.button {
             margin-left: 12px;
         }
     }
+
+    @media (min-width:992px) {
+        width: fit-content;
+        padding: 8px 24px;
+        transition: .3s;
+
+        &-dark {
+            background-color: $secondary;
+            color: $primary;
+
+            &:hover {
+                background-color: darken($secondary, 5%);
+            }
+        }
+
+        &-light {
+            background-color: $white;
+            color: $primary;
+        }
+
+        &-light-stroke {
+            border: 2px solid $white;
+            color: $white;
+
+            &:hover {
+                background-color: rgba($white, .1);
+            }
+        }
+
+        &-link {
+            &:hover {
+                background-color: $lightColor3;
+            }
+        }
+    }
 }

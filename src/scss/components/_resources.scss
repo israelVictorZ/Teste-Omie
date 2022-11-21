@@ -1,6 +1,18 @@
 .resources-area {
     padding: 40px 24px;
 
+    @media (min-width: 992px) {
+        padding: 80px;
+
+        .content {
+            padding: 100px 60px 0 0;
+
+            .text {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
     .resources {
         &-tabs-buttons {
             position: relative;
@@ -9,6 +21,7 @@
             display: flex;
             text-align: center;
             margin-top: 20px;
+            cursor: pointer;
 
             .tab-button {
                 width: 50%;
@@ -89,6 +102,10 @@
 
                     .text {
                         margin-bottom: 20px;
+                    }
+
+                    .button {
+                        display: none;
                     }
                 }
             }

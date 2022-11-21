@@ -5,7 +5,72 @@
                 <h2 class="title title-dark">Fique por dentro das principais novidades do mundo empresarial</h2>
             </div>
 
-            <div class="col-sm-12">
+            <div class="col-lg-4 d-none d-lg-block ps-0">
+                <div class="blog-card">
+                    <div class="blog-card-img">
+                        <img src="public/blog/blog-1.svg" alt="">
+                    </div>
+
+                    <div class="blog-card-description">
+                        <h3 class="title title-dark">O que são e como funcionam as microfranquias?</h3>
+
+                        <p class="text text-dark">
+                            As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!
+                        </p>
+
+                        <a href="#" class="button button-link">
+                            <span> Saiba mais </span>
+                            <img src="public/icons/arrow-2.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="blog-card">
+                    <div class="blog-card-img">
+                        <img src="public/blog/blog-2.svg" alt="">
+                    </div>
+
+                    <div class="blog-card-description">
+                        <h3 class="title title-dark">Conheça o mercado de franquias de tecnologia e o seu crescimento</h3>
+
+                        <p class="text text-dark">
+                            Ter uma franquia muitas vezes é sinônimo de sucesso e evolução. Quer saber como? Leia o artigo.
+                        </p>
+
+                        <a href="#" class="button button-link">
+                            <span> Saiba mais </span>
+                            <img src="public/icons/arrow-2.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block pe-0">
+                <div class="blog-card">
+                    <div class="blog-card-img">
+                        <img src="public/blog/blog-3.svg" alt="">
+                    </div>
+
+                    <div class="blog-card-description">
+                        <div class="content">
+                            <h3 class="title title-dark">O que você precisa saber para investir em uma franquia de...</h3>
+
+                            <p class="text text-dark">
+                                Fique a par dos principais pontos que você precisa considerar para trilhar um dos melhores investimentos do mercado
+                            </p>
+                        </div>
+
+                        <a href="#" class="button button-link">
+                            <span> Saiba mais </span>
+                            <img src="public/icons/arrow-2.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 d-block d-lg-none">
                 <div class="owl-carousel owl-blog">
                     <div class="blog-card">
                         <div class="blog-card-img">
@@ -13,11 +78,13 @@
                         </div>
 
                         <div class="blog-card-description">
-                            <h3 class="title title-dark">O que são e como funcionam as microfranquias?</h3>
+                            <div class="content">
+                                <h3 class="title title-dark">O que são e como funcionam as microfranquias?</h3>
 
-                            <p class="text text-dark">
-                                As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!
-                            </p>
+                                <p class="text text-dark">
+                                    As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!
+                                </p>
+                            </div>
 
                             <a href="#" class="button button-link">
                                 <span> Saiba mais </span>
@@ -32,11 +99,13 @@
                         </div>
 
                         <div class="blog-card-description">
-                            <h3 class="title title-dark">Conheça o mercado de franquias de tecnologia e o seu crescimento</h3>
+                            <div class="content">
+                                <h3 class="title title-dark">Conheça o mercado de franquias de tecnologia e o seu crescimento</h3>
 
-                            <p class="text text-dark">
-                                Ter uma franquia muitas vezes é sinônimo de sucesso e evolução. Quer saber como? Leia o artigo.
-                            </p>
+                                <p class="text text-dark">
+                                    Ter uma franquia muitas vezes é sinônimo de sucesso e evolução. Quer saber como? Leia o artigo.
+                                </p>
+                            </div>
 
                             <a href="#" class="button button-link">
                                 <span> Saiba mais </span>

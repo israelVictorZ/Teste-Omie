@@ -2,9 +2,22 @@
     &-area {
         padding: 40px 0;
 
+        @media (min-width: 992px) {
+            padding: 80px;
+
+            .col-lg-4 {
+                padding: 0 20px;
+            }
+        }
+
         .title {
             padding: 0 24px;
             margin-bottom: 24px;
+
+            @media (min-width: 992px) {
+                padding: 0;
+                margin-bottom: 48px;
+            }
         }
     }
 

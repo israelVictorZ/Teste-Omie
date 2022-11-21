@@ -2,21 +2,21 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="title title-dark"> Centralize suas tarefas em uma única ferramenta </h2>
+                <h2 class="title title-dark text-lg-center"> Centralize suas tarefas em uma única ferramenta </h2>
 
-                <p class="text text-dark">Você elimina processos manuais e faz a gestão de diferentes atividades do seu negócio em um ambiente seguro, com funcionalidades integradas e fáceis de usar.</p>
+                <p class="text text-dark text-lg-center">Você elimina processos manuais e faz a gestão de diferentes atividades do seu negócio em um ambiente seguro, com funcionalidades integradas e fáceis de usar.</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12">
+        <div class="row flex-lg-row-reverse">
+            <div class="col-sm-12 col-lg-8">
                 <div class="about-img">
                     <img src="public/about.svg" alt="">
                 </div>
             </div>
 
-            <div class="col-sm-12">
-                <div class="owl-carousel owl-features">
+            <div class="col-sm-12 col-lg-4">
+                <div class="owl-carousel owl-features d-block d-lg-none">
 
                     <!-- Item 1 -->
                     <div class="features-item">

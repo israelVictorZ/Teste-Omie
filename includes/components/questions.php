@@ -1,11 +1,11 @@
 <div class="questions-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-lg-5">
                 <h2 class="title title-dark">Respondemos as dúvidas mais frequentes de outros contadores</h2>
             </div>
 
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-lg-7">
 
                 <div class="accordion" id="questionsAccordion">
                     <div class="accordion-item">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="button button-link">
+                <a href="#" class="button button-link d-block ms-lg-auto">
                     <span> Veja outras dúvidas </span>
                     <img src="public/icons/arrow-2.svg" alt="">
                 </a>

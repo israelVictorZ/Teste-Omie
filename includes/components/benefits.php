@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="button button-link">
+                <a href="#" class="button button-link mx-auto">
                     <span> Veja mais aplicativos </span>
                     <img src="public/icons/arrow-2.svg" alt="">
                 </a>

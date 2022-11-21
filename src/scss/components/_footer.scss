@@ -1,10 +1,18 @@
 .footer {
     &-links {
         padding: 40px 24px;
+
+        @media (min-width: 992px) {
+            padding: 40px 80px;
+        }
     }
 
     &-list {
         margin-bottom: 24px;
+
+        @media (min-width: 992px) {
+            margin-bottom: 40px;
+        }
 
         .title {
             font-family: $fontFamily2;
@@ -23,6 +31,11 @@
                     color: $primary;
                     margin-bottom: 16px;
                     display: block;
+
+                    @media (min-width: 992px) {
+                        margin-bottom: 8px;
+                        font-size: $textFontSize;
+                    }
                 }
 
                 &:last-child {
@@ -84,6 +97,11 @@
                 margin-bottom: 24px;
                 font-weight: 700;
                 display: block;
+
+                @media (min-width: 992px) {
+                    font-size: $textFontSize;
+                    margin-bottom: 16px;
+                }
             }
         }
     }
@@ -92,8 +110,16 @@
         background-color: $primary;
         padding: 24px;
 
+        @media (min-width: 992px) {
+            padding: 24px 80px;
+        }
+
         &-sn {
             margin-bottom: 40px;
+
+            @media (min-width: 992px) {
+                margin-bottom: 0;
+            }
 
             ul {
                 display: flex;
@@ -125,6 +151,10 @@
                 display: block;
                 text-align: center;
                 margin-bottom: 0;
+
+                @media (min-width: 992px) {
+                    display: inline;
+                }
             }
         }
     }

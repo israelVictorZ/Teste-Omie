@@ -1,6 +1,10 @@
 .about-area {
     padding: 40px 0 80px;
 
+    @media (min-width: 992px) {
+        padding: 120px 80px 80px;
+    }
+
     .title, .text {
         padding: 0 24px;
     }

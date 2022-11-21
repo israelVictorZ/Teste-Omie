@@ -7,7 +7,7 @@ $(".owl-features").owlCarousel({
     items: 1,
     dots: true,
     loop: false,
-    nav : false,
+    nav: false,
 });
 
 $(".owl-vantages").owlCarousel({
@@ -18,19 +18,29 @@ $(".owl-vantages").owlCarousel({
     items: 1,
     dots: true,
     loop: false,
-    nav : false,
+    nav: false,
 });
 
 $(".owl-benefits").owlCarousel({
     autoplay: false,
     smartSpeed: 1500,
-    margin: 20,
-    stagePadding: 30,
-    items: 1,
     dots: true,
-    loop: false,
-    nav : false,
     dotsData: true,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1,
+            margin: 20,
+            stagePadding: 30,
+            loop: false,
+        },
+        992: {
+            items: 3,
+            margin: 0,
+            stagePadding: 0,
+            loop: true,
+        }
+    }
 });
 
 $(".owl-blog").owlCarousel({
@@ -41,7 +51,7 @@ $(".owl-blog").owlCarousel({
     items: 1,
     dots: false,
     loop: false,
-    nav : false,
+    nav: false,
 });
 
 // ====== FOOTER TABS
@@ -49,14 +59,14 @@ const tabsButton = document.querySelectorAll('.tab-button')
 const resourcesTabsButtons = document.querySelector('.resources-tabs-buttons')
 const tabsContent = document.querySelectorAll('.tab-content')
 
-for(let i = 0; i < tabsButton.length; i++) {
-    tabsButton[i].addEventListener('click', function() {
-        for(let i = 0; i < tabsContent.length; i++) {
+for (let i = 0; i < tabsButton.length; i++) {
+    tabsButton[i].addEventListener('click', function () {
+        for (let i = 0; i < tabsContent.length; i++) {
             tabsContent[i].className = 'tab-content'
         }
         document.getElementById(this.dataset.id).className = 'tab-content active'
 
-        for(let i = 0; i < tabsButton.length; i++) {
+        for (let i = 0; i < tabsButton.length; i++) {
             tabsButton[i].className = 'tab-button'
         }
         this.className = 'tab-button active'
@@ -74,9 +84,9 @@ for(let i = 0; i < tabsButton.length; i++) {
 // ====== FOOTER ACORDIONS
 const footerListAccordion = document.querySelectorAll('.footer-list-accordion')
 
-for(let i = 0; i < footerListAccordion.length; i++) {
-    footerListAccordion[i].addEventListener('click', function() {
-        for(let i = 0; i < footerListAccordion.length; i++) {
+for (let i = 0; i < footerListAccordion.length; i++) {
+    footerListAccordion[i].addEventListener('click', function () {
+        for (let i = 0; i < footerListAccordion.length; i++) {
             footerListAccordion[i].classList.remove('active')
         }
         this.classList.add('active')
