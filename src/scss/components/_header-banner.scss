@@ -1,17 +1,27 @@
 .header-banner-area {
+    position: relative;
     @media (min-width: 992px) {
         padding-top: 150px;
-        background-image: url('../../public/effects/effect-triangle.svg');
+        background-image: url("../../public/effects/effect-triangle-1.svg");
         background-repeat: no-repeat;
         background-position: top -35px left -175px;
     }
 
-    @media(min-width:1200px) {
+    @media (min-width: 1200px) {
         background-position: top 0px left -110px;
     }
 
-    @media(min-width:1200px) {
+    @media (min-width: 1200px) {
         background-position: unset;
+    }
+
+    &::after {
+        content: "";
+        background-image: url("../../public/effects/effect-pattern-1.svg");
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+        @include absoluteBottomRight(0, 0);
     }
 
     .banner {

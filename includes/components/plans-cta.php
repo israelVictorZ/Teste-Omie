@@ -1,4 +1,4 @@
-<div class="cta-area">
+<div class="cta-area cta-area-plans">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">

@@ -12,7 +12,22 @@
 
             @media (min-width: 992px) {
                 position: relative;
-                @include flex(center, unset)
+                @include flex(center, unset);
+
+                &::before, &::after {
+                    content: '';
+                    background-image: url('../../public/effects/effect-triangle-2.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 88px;
+                    height: 80px;
+                    @include absoluteBottomRight(-44px, 40px);
+                }
+
+                &::after {
+                    right: 80px;
+                }
             }
         }
 

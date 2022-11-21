@@ -5,8 +5,13 @@
         padding: 120px 80px 80px;
     }
 
-    .title, .text {
+    .title,
+    .text {
         padding: 0 24px;
+
+        @media (min-width: 992px) {
+            padding: 0;
+        }
     }
 
     .about-img {
@@ -56,6 +61,71 @@
 
         .text {
             margin-bottom: 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .accordion {
+            margin-top: 48px;
+
+            &-item {
+                padding: 16px;
+                border: 1px solid $lightColor2;
+                background-color: $lightColor1;
+
+                button {
+                    position: relative;
+                    padding: 0;
+                    margin-bottom: 8px;
+                    background-color: $lightColor1;
+
+                    &::before {
+                        content: "";
+                        height: 0;
+                        @include absoluteTopLeft(-16px, -16px);
+                        width: 2px;
+                        background-color: $secondary;
+                        transition: .3s;
+                    }
+
+                    &::after {
+                        content: unset;
+                    }
+
+                    &:not(.collapsed),
+                    &:focus {
+                        outline: none;
+                        border: none;
+                        box-shadow: none;
+                        background-color: $lightColor1;
+
+                        &::before {
+                            height: calc(100% + 32px);
+                        }
+                    }
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        object-fit: contain;
+                    }
+
+                    .text {
+                        color: $primary;
+                        margin-left: 12px;
+                    }
+                }
+            }
+
+            &-body {
+                padding: 0;
+
+                .text {
+                    color: $darkColor;
+                    margin-bottom: 0;
+                    padding: 0;
+                }
+            }
         }
     }
 }

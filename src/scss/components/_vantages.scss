@@ -1,8 +1,16 @@
 .vantages-area {
     padding: 40px 0 40px;
 
+    @media (min-width: 992px) {
+        padding: 80px;
+    }
+
     .title {
         padding: 0 24px;
+
+        @media (min-width: 992px) {
+            padding: 0;
+        }
     }
 
     .owl-item {
@@ -48,5 +56,133 @@
 
     .button-box {
         padding: 80px 24px 0;
+
+        @media (min-width: 992px) {
+            padding: 24px 0 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .vantages-grid {
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(2, 280px);
+
+            &-item {
+                &-1 {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row: 1;
+                }
+
+                &-2 {
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+
+                &-3 {
+                    grid-column: 4;
+                    grid-row: 1;
+                }
+
+                &-4 {
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+
+                &-5 {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+
+                &-6 {
+                    grid-column: 3;
+                    grid-row: 2;
+                }
+
+                &-7 {
+                    grid-column: 4;
+                    grid-row: 2;
+                }
+            }
+
+            .vantages {
+                &-item {
+                    position: relative;
+                    padding: 40px;
+                    overflow: hidden;
+                    transition: 0.3s;
+
+                    &:nth-child(2) {
+                        background-color: $lightColor1;
+                    }
+
+                    &:nth-child(3) {
+                        background-color: $lightColor3;
+                    }
+
+                    &:nth-child(4) {
+                        background-color: $lightColor3;
+                    }
+
+                    &:nth-child(5) {
+                        background-color: $lightColor1;
+                    }
+
+                    &:nth-child(6) {
+                        background-color: $lightColor3;
+                    }
+
+                    &:nth-child(7) {
+                        background-color: $lightColor1;
+                    }
+
+                    &:hover {
+                        position: relative;
+                        transform: scale(1.15);
+                        box-shadow: 0px 0px 16px rgba($primary, 0.12);
+                        z-index: 99999;
+
+                        .vantages-description {
+                            .text {
+                                max-height: 500px;
+                            }
+                        }
+                    }
+                }
+
+                &-icon {
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 16px;
+                    @include flex(center, center);
+                    @include absoluteTopLeft(40px, 40px);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                &-description {
+                    width: calc(100% - 80px);
+                    transition: 0.3s;
+                    @include absoluteBottomLeft(0, 40px);
+
+                    .title {
+                        font-size: $titleFontSize - 4px;
+                        line-height: $textLineHeight - 4px;
+                    }
+
+                    .text {
+                        font-size: $textFontSize - 2px;
+                        line-height: $textLineHeight - 4px;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
     }
 }

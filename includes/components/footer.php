@@ -1,22 +1,22 @@
 <section class="partners-area">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-6 col-lg-3">
                 <div class="partners-icon mb-lg-0 h-100">
                     <img src="public/partners/astella.svg" alt="">
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-6 col-lg-3">
                 <div class="partners-icon mb-lg-0 h-100">
                     <img src="public/partners/softbank.svg" alt="">
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-6 col-lg-3">
                 <div class="partners-icon mb-0 h-100">
                     <img src="public/partners/riverwood.svg" alt="">
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-6 col-lg-3">
                 <div class="partners-icon mb-0 h-100">
                     <img src="public/partners/aws.svg" alt="">
                 </div>

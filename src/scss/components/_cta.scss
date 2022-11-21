@@ -13,4 +13,27 @@
             margin-bottom: 0;
         }
     }
+
+    @media (min-width: 992px) {
+        &-plans {
+            position: relative;
+            padding: 80px;
+            width: 70%;
+
+            &::after {
+                content: '';
+                background-image: url('../../public/effects/effect-pattern-2.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 550px;
+                height: 200px;
+                @include absoluteBottomLeft(0, calc(100% - 200px));
+            }
+
+            .button {
+                margin-right: 24px;
+            }
+        }
+    }
 }
